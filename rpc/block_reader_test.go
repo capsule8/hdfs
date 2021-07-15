@@ -53,6 +53,7 @@ func getNamenode(t *testing.T) *NamenodeConnection {
 }
 
 func getBlocks(t *testing.T, name string) []*hdfs.LocatedBlockProto {
+	hdfs.LoadAPI()
 	namenode := getNamenode(t)
 
 	req := &hdfs.GetBlockLocationsRequestProto{

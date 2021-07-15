@@ -509,10 +509,12 @@ type UnsetStoragePolicyRequestProto struct {
 	XXX_unrecognized []byte  `json:"-"`
 }
 
-func (m *UnsetStoragePolicyRequestProto) Reset()                    { *m = UnsetStoragePolicyRequestProto{} }
-func (m *UnsetStoragePolicyRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*UnsetStoragePolicyRequestProto) ProtoMessage()               {}
-func (*UnsetStoragePolicyRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{12} }
+func (m *UnsetStoragePolicyRequestProto) Reset()         { *m = UnsetStoragePolicyRequestProto{} }
+func (m *UnsetStoragePolicyRequestProto) String() string { return proto.CompactTextString(m) }
+func (*UnsetStoragePolicyRequestProto) ProtoMessage()    {}
+func (*UnsetStoragePolicyRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{12}
+}
 
 func (m *UnsetStoragePolicyRequestProto) GetSrc() string {
 	if m != nil && m.Src != nil {
@@ -570,10 +572,12 @@ type GetStoragePoliciesRequestProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *GetStoragePoliciesRequestProto) Reset()                    { *m = GetStoragePoliciesRequestProto{} }
-func (m *GetStoragePoliciesRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*GetStoragePoliciesRequestProto) ProtoMessage()               {}
-func (*GetStoragePoliciesRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{16} }
+func (m *GetStoragePoliciesRequestProto) Reset()         { *m = GetStoragePoliciesRequestProto{} }
+func (m *GetStoragePoliciesRequestProto) String() string { return proto.CompactTextString(m) }
+func (*GetStoragePoliciesRequestProto) ProtoMessage()    {}
+func (*GetStoragePoliciesRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{16}
+}
 
 type GetStoragePoliciesResponseProto struct {
 	Policies         []*BlockStoragePolicyProto `protobuf:"bytes,1,rep,name=policies" json:"policies,omitempty"`
@@ -1558,10 +1562,12 @@ type GetDatanodeReportResponseProto struct {
 	XXX_unrecognized []byte               `json:"-"`
 }
 
-func (m *GetDatanodeReportResponseProto) Reset()                    { *m = GetDatanodeReportResponseProto{} }
-func (m *GetDatanodeReportResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*GetDatanodeReportResponseProto) ProtoMessage()               {}
-func (*GetDatanodeReportResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{57} }
+func (m *GetDatanodeReportResponseProto) Reset()         { *m = GetDatanodeReportResponseProto{} }
+func (m *GetDatanodeReportResponseProto) String() string { return proto.CompactTextString(m) }
+func (*GetDatanodeReportResponseProto) ProtoMessage()    {}
+func (*GetDatanodeReportResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{57}
+}
 
 func (m *GetDatanodeReportResponseProto) GetDi() []*DatanodeInfoProto {
 	if m != nil {
@@ -2232,10 +2238,12 @@ type AddCacheDirectiveResponseProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *AddCacheDirectiveResponseProto) Reset()                    { *m = AddCacheDirectiveResponseProto{} }
-func (m *AddCacheDirectiveResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*AddCacheDirectiveResponseProto) ProtoMessage()               {}
-func (*AddCacheDirectiveResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{90} }
+func (m *AddCacheDirectiveResponseProto) Reset()         { *m = AddCacheDirectiveResponseProto{} }
+func (m *AddCacheDirectiveResponseProto) String() string { return proto.CompactTextString(m) }
+func (*AddCacheDirectiveResponseProto) ProtoMessage()    {}
+func (*AddCacheDirectiveResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{90}
+}
 
 func (m *AddCacheDirectiveResponseProto) GetId() int64 {
 	if m != nil && m.Id != nil {
@@ -2681,10 +2689,12 @@ type GetContentSummaryRequestProto struct {
 	XXX_unrecognized []byte  `json:"-"`
 }
 
-func (m *GetContentSummaryRequestProto) Reset()                    { *m = GetContentSummaryRequestProto{} }
-func (m *GetContentSummaryRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*GetContentSummaryRequestProto) ProtoMessage()               {}
-func (*GetContentSummaryRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{111} }
+func (m *GetContentSummaryRequestProto) Reset()         { *m = GetContentSummaryRequestProto{} }
+func (m *GetContentSummaryRequestProto) String() string { return proto.CompactTextString(m) }
+func (*GetContentSummaryRequestProto) ProtoMessage()    {}
+func (*GetContentSummaryRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{111}
+}
 
 func (m *GetContentSummaryRequestProto) GetPath() string {
 	if m != nil && m.Path != nil {
@@ -3270,10 +3280,12 @@ type DisallowSnapshotResponseProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *DisallowSnapshotResponseProto) Reset()                    { *m = DisallowSnapshotResponseProto{} }
-func (m *DisallowSnapshotResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*DisallowSnapshotResponseProto) ProtoMessage()               {}
-func (*DisallowSnapshotResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{140} }
+func (m *DisallowSnapshotResponseProto) Reset()         { *m = DisallowSnapshotResponseProto{} }
+func (m *DisallowSnapshotResponseProto) String() string { return proto.CompactTextString(m) }
+func (*DisallowSnapshotResponseProto) ProtoMessage()    {}
+func (*DisallowSnapshotResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{140}
+}
 
 type DeleteSnapshotRequestProto struct {
 	SnapshotRoot     *string `protobuf:"bytes,1,req,name=snapshotRoot" json:"snapshotRoot,omitempty"`
@@ -3395,10 +3407,12 @@ type GetEditsFromTxidResponseProto struct {
 	XXX_unrecognized []byte           `json:"-"`
 }
 
-func (m *GetEditsFromTxidResponseProto) Reset()                    { *m = GetEditsFromTxidResponseProto{} }
-func (m *GetEditsFromTxidResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*GetEditsFromTxidResponseProto) ProtoMessage()               {}
-func (*GetEditsFromTxidResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{148} }
+func (m *GetEditsFromTxidResponseProto) Reset()         { *m = GetEditsFromTxidResponseProto{} }
+func (m *GetEditsFromTxidResponseProto) String() string { return proto.CompactTextString(m) }
+func (*GetEditsFromTxidResponseProto) ProtoMessage()    {}
+func (*GetEditsFromTxidResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{148}
+}
 
 func (m *GetEditsFromTxidResponseProto) GetEventsList() *EventsListProto {
 	if m != nil {
@@ -3406,165 +3420,6 @@ func (m *GetEditsFromTxidResponseProto) GetEventsList() *EventsListProto {
 	}
 	return nil
 }
-
-func init() {
-	proto.RegisterType((*GetBlockLocationsRequestProto)(nil), "hadoop.hdfs.GetBlockLocationsRequestProto")
-	proto.RegisterType((*GetBlockLocationsResponseProto)(nil), "hadoop.hdfs.GetBlockLocationsResponseProto")
-	proto.RegisterType((*GetServerDefaultsRequestProto)(nil), "hadoop.hdfs.GetServerDefaultsRequestProto")
-	proto.RegisterType((*GetServerDefaultsResponseProto)(nil), "hadoop.hdfs.GetServerDefaultsResponseProto")
-	proto.RegisterType((*CreateRequestProto)(nil), "hadoop.hdfs.CreateRequestProto")
-	proto.RegisterType((*CreateResponseProto)(nil), "hadoop.hdfs.CreateResponseProto")
-	proto.RegisterType((*AppendRequestProto)(nil), "hadoop.hdfs.AppendRequestProto")
-	proto.RegisterType((*AppendResponseProto)(nil), "hadoop.hdfs.AppendResponseProto")
-	proto.RegisterType((*SetReplicationRequestProto)(nil), "hadoop.hdfs.SetReplicationRequestProto")
-	proto.RegisterType((*SetReplicationResponseProto)(nil), "hadoop.hdfs.SetReplicationResponseProto")
-	proto.RegisterType((*SetStoragePolicyRequestProto)(nil), "hadoop.hdfs.SetStoragePolicyRequestProto")
-	proto.RegisterType((*SetStoragePolicyResponseProto)(nil), "hadoop.hdfs.SetStoragePolicyResponseProto")
-	proto.RegisterType((*UnsetStoragePolicyRequestProto)(nil), "hadoop.hdfs.UnsetStoragePolicyRequestProto")
-	proto.RegisterType((*UnsetStoragePolicyResponseProto)(nil), "hadoop.hdfs.UnsetStoragePolicyResponseProto")
-	proto.RegisterType((*GetStoragePolicyRequestProto)(nil), "hadoop.hdfs.GetStoragePolicyRequestProto")
-	proto.RegisterType((*GetStoragePolicyResponseProto)(nil), "hadoop.hdfs.GetStoragePolicyResponseProto")
-	proto.RegisterType((*GetStoragePoliciesRequestProto)(nil), "hadoop.hdfs.GetStoragePoliciesRequestProto")
-	proto.RegisterType((*GetStoragePoliciesResponseProto)(nil), "hadoop.hdfs.GetStoragePoliciesResponseProto")
-	proto.RegisterType((*SetPermissionRequestProto)(nil), "hadoop.hdfs.SetPermissionRequestProto")
-	proto.RegisterType((*SetPermissionResponseProto)(nil), "hadoop.hdfs.SetPermissionResponseProto")
-	proto.RegisterType((*SetOwnerRequestProto)(nil), "hadoop.hdfs.SetOwnerRequestProto")
-	proto.RegisterType((*SetOwnerResponseProto)(nil), "hadoop.hdfs.SetOwnerResponseProto")
-	proto.RegisterType((*AbandonBlockRequestProto)(nil), "hadoop.hdfs.AbandonBlockRequestProto")
-	proto.RegisterType((*AbandonBlockResponseProto)(nil), "hadoop.hdfs.AbandonBlockResponseProto")
-	proto.RegisterType((*AddBlockRequestProto)(nil), "hadoop.hdfs.AddBlockRequestProto")
-	proto.RegisterType((*AddBlockResponseProto)(nil), "hadoop.hdfs.AddBlockResponseProto")
-	proto.RegisterType((*GetAdditionalDatanodeRequestProto)(nil), "hadoop.hdfs.GetAdditionalDatanodeRequestProto")
-	proto.RegisterType((*GetAdditionalDatanodeResponseProto)(nil), "hadoop.hdfs.GetAdditionalDatanodeResponseProto")
-	proto.RegisterType((*CompleteRequestProto)(nil), "hadoop.hdfs.CompleteRequestProto")
-	proto.RegisterType((*CompleteResponseProto)(nil), "hadoop.hdfs.CompleteResponseProto")
-	proto.RegisterType((*ReportBadBlocksRequestProto)(nil), "hadoop.hdfs.ReportBadBlocksRequestProto")
-	proto.RegisterType((*ReportBadBlocksResponseProto)(nil), "hadoop.hdfs.ReportBadBlocksResponseProto")
-	proto.RegisterType((*ConcatRequestProto)(nil), "hadoop.hdfs.ConcatRequestProto")
-	proto.RegisterType((*ConcatResponseProto)(nil), "hadoop.hdfs.ConcatResponseProto")
-	proto.RegisterType((*TruncateRequestProto)(nil), "hadoop.hdfs.TruncateRequestProto")
-	proto.RegisterType((*TruncateResponseProto)(nil), "hadoop.hdfs.TruncateResponseProto")
-	proto.RegisterType((*RenameRequestProto)(nil), "hadoop.hdfs.RenameRequestProto")
-	proto.RegisterType((*RenameResponseProto)(nil), "hadoop.hdfs.RenameResponseProto")
-	proto.RegisterType((*Rename2RequestProto)(nil), "hadoop.hdfs.Rename2RequestProto")
-	proto.RegisterType((*Rename2ResponseProto)(nil), "hadoop.hdfs.Rename2ResponseProto")
-	proto.RegisterType((*DeleteRequestProto)(nil), "hadoop.hdfs.DeleteRequestProto")
-	proto.RegisterType((*DeleteResponseProto)(nil), "hadoop.hdfs.DeleteResponseProto")
-	proto.RegisterType((*MkdirsRequestProto)(nil), "hadoop.hdfs.MkdirsRequestProto")
-	proto.RegisterType((*MkdirsResponseProto)(nil), "hadoop.hdfs.MkdirsResponseProto")
-	proto.RegisterType((*GetListingRequestProto)(nil), "hadoop.hdfs.GetListingRequestProto")
-	proto.RegisterType((*GetListingResponseProto)(nil), "hadoop.hdfs.GetListingResponseProto")
-	proto.RegisterType((*GetSnapshottableDirListingRequestProto)(nil), "hadoop.hdfs.GetSnapshottableDirListingRequestProto")
-	proto.RegisterType((*GetSnapshottableDirListingResponseProto)(nil), "hadoop.hdfs.GetSnapshottableDirListingResponseProto")
-	proto.RegisterType((*GetSnapshotDiffReportRequestProto)(nil), "hadoop.hdfs.GetSnapshotDiffReportRequestProto")
-	proto.RegisterType((*GetSnapshotDiffReportResponseProto)(nil), "hadoop.hdfs.GetSnapshotDiffReportResponseProto")
-	proto.RegisterType((*RenewLeaseRequestProto)(nil), "hadoop.hdfs.RenewLeaseRequestProto")
-	proto.RegisterType((*RenewLeaseResponseProto)(nil), "hadoop.hdfs.RenewLeaseResponseProto")
-	proto.RegisterType((*RecoverLeaseRequestProto)(nil), "hadoop.hdfs.RecoverLeaseRequestProto")
-	proto.RegisterType((*RecoverLeaseResponseProto)(nil), "hadoop.hdfs.RecoverLeaseResponseProto")
-	proto.RegisterType((*GetFsStatusRequestProto)(nil), "hadoop.hdfs.GetFsStatusRequestProto")
-	proto.RegisterType((*GetFsStatsResponseProto)(nil), "hadoop.hdfs.GetFsStatsResponseProto")
-	proto.RegisterType((*GetDatanodeReportRequestProto)(nil), "hadoop.hdfs.GetDatanodeReportRequestProto")
-	proto.RegisterType((*GetDatanodeReportResponseProto)(nil), "hadoop.hdfs.GetDatanodeReportResponseProto")
-	proto.RegisterType((*GetDatanodeStorageReportRequestProto)(nil), "hadoop.hdfs.GetDatanodeStorageReportRequestProto")
-	proto.RegisterType((*DatanodeStorageReportProto)(nil), "hadoop.hdfs.DatanodeStorageReportProto")
-	proto.RegisterType((*GetDatanodeStorageReportResponseProto)(nil), "hadoop.hdfs.GetDatanodeStorageReportResponseProto")
-	proto.RegisterType((*GetPreferredBlockSizeRequestProto)(nil), "hadoop.hdfs.GetPreferredBlockSizeRequestProto")
-	proto.RegisterType((*GetPreferredBlockSizeResponseProto)(nil), "hadoop.hdfs.GetPreferredBlockSizeResponseProto")
-	proto.RegisterType((*SetSafeModeRequestProto)(nil), "hadoop.hdfs.SetSafeModeRequestProto")
-	proto.RegisterType((*SetSafeModeResponseProto)(nil), "hadoop.hdfs.SetSafeModeResponseProto")
-	proto.RegisterType((*SaveNamespaceRequestProto)(nil), "hadoop.hdfs.SaveNamespaceRequestProto")
-	proto.RegisterType((*SaveNamespaceResponseProto)(nil), "hadoop.hdfs.SaveNamespaceResponseProto")
-	proto.RegisterType((*RollEditsRequestProto)(nil), "hadoop.hdfs.RollEditsRequestProto")
-	proto.RegisterType((*RollEditsResponseProto)(nil), "hadoop.hdfs.RollEditsResponseProto")
-	proto.RegisterType((*RestoreFailedStorageRequestProto)(nil), "hadoop.hdfs.RestoreFailedStorageRequestProto")
-	proto.RegisterType((*RestoreFailedStorageResponseProto)(nil), "hadoop.hdfs.RestoreFailedStorageResponseProto")
-	proto.RegisterType((*RefreshNodesRequestProto)(nil), "hadoop.hdfs.RefreshNodesRequestProto")
-	proto.RegisterType((*RefreshNodesResponseProto)(nil), "hadoop.hdfs.RefreshNodesResponseProto")
-	proto.RegisterType((*FinalizeUpgradeRequestProto)(nil), "hadoop.hdfs.FinalizeUpgradeRequestProto")
-	proto.RegisterType((*FinalizeUpgradeResponseProto)(nil), "hadoop.hdfs.FinalizeUpgradeResponseProto")
-	proto.RegisterType((*RollingUpgradeRequestProto)(nil), "hadoop.hdfs.RollingUpgradeRequestProto")
-	proto.RegisterType((*RollingUpgradeInfoProto)(nil), "hadoop.hdfs.RollingUpgradeInfoProto")
-	proto.RegisterType((*RollingUpgradeResponseProto)(nil), "hadoop.hdfs.RollingUpgradeResponseProto")
-	proto.RegisterType((*ListCorruptFileBlocksRequestProto)(nil), "hadoop.hdfs.ListCorruptFileBlocksRequestProto")
-	proto.RegisterType((*ListCorruptFileBlocksResponseProto)(nil), "hadoop.hdfs.ListCorruptFileBlocksResponseProto")
-	proto.RegisterType((*MetaSaveRequestProto)(nil), "hadoop.hdfs.MetaSaveRequestProto")
-	proto.RegisterType((*MetaSaveResponseProto)(nil), "hadoop.hdfs.MetaSaveResponseProto")
-	proto.RegisterType((*GetFileInfoRequestProto)(nil), "hadoop.hdfs.GetFileInfoRequestProto")
-	proto.RegisterType((*GetFileInfoResponseProto)(nil), "hadoop.hdfs.GetFileInfoResponseProto")
-	proto.RegisterType((*IsFileClosedRequestProto)(nil), "hadoop.hdfs.IsFileClosedRequestProto")
-	proto.RegisterType((*IsFileClosedResponseProto)(nil), "hadoop.hdfs.IsFileClosedResponseProto")
-	proto.RegisterType((*CacheDirectiveInfoProto)(nil), "hadoop.hdfs.CacheDirectiveInfoProto")
-	proto.RegisterType((*CacheDirectiveInfoExpirationProto)(nil), "hadoop.hdfs.CacheDirectiveInfoExpirationProto")
-	proto.RegisterType((*CacheDirectiveStatsProto)(nil), "hadoop.hdfs.CacheDirectiveStatsProto")
-	proto.RegisterType((*AddCacheDirectiveRequestProto)(nil), "hadoop.hdfs.AddCacheDirectiveRequestProto")
-	proto.RegisterType((*AddCacheDirectiveResponseProto)(nil), "hadoop.hdfs.AddCacheDirectiveResponseProto")
-	proto.RegisterType((*ModifyCacheDirectiveRequestProto)(nil), "hadoop.hdfs.ModifyCacheDirectiveRequestProto")
-	proto.RegisterType((*ModifyCacheDirectiveResponseProto)(nil), "hadoop.hdfs.ModifyCacheDirectiveResponseProto")
-	proto.RegisterType((*RemoveCacheDirectiveRequestProto)(nil), "hadoop.hdfs.RemoveCacheDirectiveRequestProto")
-	proto.RegisterType((*RemoveCacheDirectiveResponseProto)(nil), "hadoop.hdfs.RemoveCacheDirectiveResponseProto")
-	proto.RegisterType((*ListCacheDirectivesRequestProto)(nil), "hadoop.hdfs.ListCacheDirectivesRequestProto")
-	proto.RegisterType((*CacheDirectiveEntryProto)(nil), "hadoop.hdfs.CacheDirectiveEntryProto")
-	proto.RegisterType((*ListCacheDirectivesResponseProto)(nil), "hadoop.hdfs.ListCacheDirectivesResponseProto")
-	proto.RegisterType((*CachePoolInfoProto)(nil), "hadoop.hdfs.CachePoolInfoProto")
-	proto.RegisterType((*CachePoolStatsProto)(nil), "hadoop.hdfs.CachePoolStatsProto")
-	proto.RegisterType((*AddCachePoolRequestProto)(nil), "hadoop.hdfs.AddCachePoolRequestProto")
-	proto.RegisterType((*AddCachePoolResponseProto)(nil), "hadoop.hdfs.AddCachePoolResponseProto")
-	proto.RegisterType((*ModifyCachePoolRequestProto)(nil), "hadoop.hdfs.ModifyCachePoolRequestProto")
-	proto.RegisterType((*ModifyCachePoolResponseProto)(nil), "hadoop.hdfs.ModifyCachePoolResponseProto")
-	proto.RegisterType((*RemoveCachePoolRequestProto)(nil), "hadoop.hdfs.RemoveCachePoolRequestProto")
-	proto.RegisterType((*RemoveCachePoolResponseProto)(nil), "hadoop.hdfs.RemoveCachePoolResponseProto")
-	proto.RegisterType((*ListCachePoolsRequestProto)(nil), "hadoop.hdfs.ListCachePoolsRequestProto")
-	proto.RegisterType((*ListCachePoolsResponseProto)(nil), "hadoop.hdfs.ListCachePoolsResponseProto")
-	proto.RegisterType((*CachePoolEntryProto)(nil), "hadoop.hdfs.CachePoolEntryProto")
-	proto.RegisterType((*GetFileLinkInfoRequestProto)(nil), "hadoop.hdfs.GetFileLinkInfoRequestProto")
-	proto.RegisterType((*GetFileLinkInfoResponseProto)(nil), "hadoop.hdfs.GetFileLinkInfoResponseProto")
-	proto.RegisterType((*GetContentSummaryRequestProto)(nil), "hadoop.hdfs.GetContentSummaryRequestProto")
-	proto.RegisterType((*GetContentSummaryResponseProto)(nil), "hadoop.hdfs.GetContentSummaryResponseProto")
-	proto.RegisterType((*GetQuotaUsageRequestProto)(nil), "hadoop.hdfs.GetQuotaUsageRequestProto")
-	proto.RegisterType((*GetQuotaUsageResponseProto)(nil), "hadoop.hdfs.GetQuotaUsageResponseProto")
-	proto.RegisterType((*SetQuotaRequestProto)(nil), "hadoop.hdfs.SetQuotaRequestProto")
-	proto.RegisterType((*SetQuotaResponseProto)(nil), "hadoop.hdfs.SetQuotaResponseProto")
-	proto.RegisterType((*FsyncRequestProto)(nil), "hadoop.hdfs.FsyncRequestProto")
-	proto.RegisterType((*FsyncResponseProto)(nil), "hadoop.hdfs.FsyncResponseProto")
-	proto.RegisterType((*SetTimesRequestProto)(nil), "hadoop.hdfs.SetTimesRequestProto")
-	proto.RegisterType((*SetTimesResponseProto)(nil), "hadoop.hdfs.SetTimesResponseProto")
-	proto.RegisterType((*CreateSymlinkRequestProto)(nil), "hadoop.hdfs.CreateSymlinkRequestProto")
-	proto.RegisterType((*CreateSymlinkResponseProto)(nil), "hadoop.hdfs.CreateSymlinkResponseProto")
-	proto.RegisterType((*GetLinkTargetRequestProto)(nil), "hadoop.hdfs.GetLinkTargetRequestProto")
-	proto.RegisterType((*GetLinkTargetResponseProto)(nil), "hadoop.hdfs.GetLinkTargetResponseProto")
-	proto.RegisterType((*UpdateBlockForPipelineRequestProto)(nil), "hadoop.hdfs.UpdateBlockForPipelineRequestProto")
-	proto.RegisterType((*UpdateBlockForPipelineResponseProto)(nil), "hadoop.hdfs.UpdateBlockForPipelineResponseProto")
-	proto.RegisterType((*UpdatePipelineRequestProto)(nil), "hadoop.hdfs.UpdatePipelineRequestProto")
-	proto.RegisterType((*UpdatePipelineResponseProto)(nil), "hadoop.hdfs.UpdatePipelineResponseProto")
-	proto.RegisterType((*SetBalancerBandwidthRequestProto)(nil), "hadoop.hdfs.SetBalancerBandwidthRequestProto")
-	proto.RegisterType((*SetBalancerBandwidthResponseProto)(nil), "hadoop.hdfs.SetBalancerBandwidthResponseProto")
-	proto.RegisterType((*GetDataEncryptionKeyRequestProto)(nil), "hadoop.hdfs.GetDataEncryptionKeyRequestProto")
-	proto.RegisterType((*GetDataEncryptionKeyResponseProto)(nil), "hadoop.hdfs.GetDataEncryptionKeyResponseProto")
-	proto.RegisterType((*CreateSnapshotRequestProto)(nil), "hadoop.hdfs.CreateSnapshotRequestProto")
-	proto.RegisterType((*CreateSnapshotResponseProto)(nil), "hadoop.hdfs.CreateSnapshotResponseProto")
-	proto.RegisterType((*RenameSnapshotRequestProto)(nil), "hadoop.hdfs.RenameSnapshotRequestProto")
-	proto.RegisterType((*RenameSnapshotResponseProto)(nil), "hadoop.hdfs.RenameSnapshotResponseProto")
-	proto.RegisterType((*AllowSnapshotRequestProto)(nil), "hadoop.hdfs.AllowSnapshotRequestProto")
-	proto.RegisterType((*AllowSnapshotResponseProto)(nil), "hadoop.hdfs.AllowSnapshotResponseProto")
-	proto.RegisterType((*DisallowSnapshotRequestProto)(nil), "hadoop.hdfs.DisallowSnapshotRequestProto")
-	proto.RegisterType((*DisallowSnapshotResponseProto)(nil), "hadoop.hdfs.DisallowSnapshotResponseProto")
-	proto.RegisterType((*DeleteSnapshotRequestProto)(nil), "hadoop.hdfs.DeleteSnapshotRequestProto")
-	proto.RegisterType((*DeleteSnapshotResponseProto)(nil), "hadoop.hdfs.DeleteSnapshotResponseProto")
-	proto.RegisterType((*CheckAccessRequestProto)(nil), "hadoop.hdfs.CheckAccessRequestProto")
-	proto.RegisterType((*CheckAccessResponseProto)(nil), "hadoop.hdfs.CheckAccessResponseProto")
-	proto.RegisterType((*GetCurrentEditLogTxidRequestProto)(nil), "hadoop.hdfs.GetCurrentEditLogTxidRequestProto")
-	proto.RegisterType((*GetCurrentEditLogTxidResponseProto)(nil), "hadoop.hdfs.GetCurrentEditLogTxidResponseProto")
-	proto.RegisterType((*GetEditsFromTxidRequestProto)(nil), "hadoop.hdfs.GetEditsFromTxidRequestProto")
-	proto.RegisterType((*GetEditsFromTxidResponseProto)(nil), "hadoop.hdfs.GetEditsFromTxidResponseProto")
-	proto.RegisterEnum("hadoop.hdfs.CreateFlagProto", CreateFlagProto_name, CreateFlagProto_value)
-	proto.RegisterEnum("hadoop.hdfs.DatanodeReportTypeProto", DatanodeReportTypeProto_name, DatanodeReportTypeProto_value)
-	proto.RegisterEnum("hadoop.hdfs.SafeModeActionProto", SafeModeActionProto_name, SafeModeActionProto_value)
-	proto.RegisterEnum("hadoop.hdfs.RollingUpgradeActionProto", RollingUpgradeActionProto_name, RollingUpgradeActionProto_value)
-	proto.RegisterEnum("hadoop.hdfs.CacheFlagProto", CacheFlagProto_name, CacheFlagProto_value)
-}
-
-func init() { proto.RegisterFile("ClientNamenodeProtocol.proto", fileDescriptor4) }
 
 var fileDescriptor4 = []byte{
 	// 5410 bytes of a gzipped FileDescriptorProto

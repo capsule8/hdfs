@@ -553,22 +553,6 @@ func (m *RpcSaslProto_SaslAuth) GetChallenge() []byte {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*RPCTraceInfoProto)(nil), "hadoop.common.RPCTraceInfoProto")
-	proto.RegisterType((*RPCCallerContextProto)(nil), "hadoop.common.RPCCallerContextProto")
-	proto.RegisterType((*RpcRequestHeaderProto)(nil), "hadoop.common.RpcRequestHeaderProto")
-	proto.RegisterType((*RpcResponseHeaderProto)(nil), "hadoop.common.RpcResponseHeaderProto")
-	proto.RegisterType((*RpcSaslProto)(nil), "hadoop.common.RpcSaslProto")
-	proto.RegisterType((*RpcSaslProto_SaslAuth)(nil), "hadoop.common.RpcSaslProto.SaslAuth")
-	proto.RegisterEnum("hadoop.common.RpcKindProto", RpcKindProto_name, RpcKindProto_value)
-	proto.RegisterEnum("hadoop.common.RpcRequestHeaderProto_OperationProto", RpcRequestHeaderProto_OperationProto_name, RpcRequestHeaderProto_OperationProto_value)
-	proto.RegisterEnum("hadoop.common.RpcResponseHeaderProto_RpcStatusProto", RpcResponseHeaderProto_RpcStatusProto_name, RpcResponseHeaderProto_RpcStatusProto_value)
-	proto.RegisterEnum("hadoop.common.RpcResponseHeaderProto_RpcErrorCodeProto", RpcResponseHeaderProto_RpcErrorCodeProto_name, RpcResponseHeaderProto_RpcErrorCodeProto_value)
-	proto.RegisterEnum("hadoop.common.RpcSaslProto_SaslState", RpcSaslProto_SaslState_name, RpcSaslProto_SaslState_value)
-}
-
-func init() { proto.RegisterFile("RpcHeader.proto", fileDescriptor4) }
-
 var fileDescriptor4 = []byte{
 	// 1035 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x55, 0xdd, 0x6e, 0xe3, 0x44,

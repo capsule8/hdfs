@@ -366,8 +366,10 @@ type GetReconfigurationStatusConfigChangeProto struct {
 func (m *GetReconfigurationStatusConfigChangeProto) Reset() {
 	*m = GetReconfigurationStatusConfigChangeProto{}
 }
-func (m *GetReconfigurationStatusConfigChangeProto) String() string { return proto.CompactTextString(m) }
-func (*GetReconfigurationStatusConfigChangeProto) ProtoMessage()    {}
+func (m *GetReconfigurationStatusConfigChangeProto) String() string {
+	return proto.CompactTextString(m)
+}
+func (*GetReconfigurationStatusConfigChangeProto) ProtoMessage() {}
 func (*GetReconfigurationStatusConfigChangeProto) Descriptor() ([]byte, []int) {
 	return fileDescriptor0, []int{3}
 }
@@ -457,8 +459,10 @@ type ListReconfigurablePropertiesResponseProto struct {
 func (m *ListReconfigurablePropertiesResponseProto) Reset() {
 	*m = ListReconfigurablePropertiesResponseProto{}
 }
-func (m *ListReconfigurablePropertiesResponseProto) String() string { return proto.CompactTextString(m) }
-func (*ListReconfigurablePropertiesResponseProto) ProtoMessage()    {}
+func (m *ListReconfigurablePropertiesResponseProto) String() string {
+	return proto.CompactTextString(m)
+}
+func (*ListReconfigurablePropertiesResponseProto) ProtoMessage() {}
 func (*ListReconfigurablePropertiesResponseProto) Descriptor() ([]byte, []int) {
 	return fileDescriptor0, []int{6}
 }
@@ -469,18 +473,6 @@ func (m *ListReconfigurablePropertiesResponseProto) GetName() []string {
 	}
 	return nil
 }
-
-func init() {
-	proto.RegisterType((*StartReconfigurationRequestProto)(nil), "hadoop.hdfs.StartReconfigurationRequestProto")
-	proto.RegisterType((*StartReconfigurationResponseProto)(nil), "hadoop.hdfs.StartReconfigurationResponseProto")
-	proto.RegisterType((*GetReconfigurationStatusRequestProto)(nil), "hadoop.hdfs.GetReconfigurationStatusRequestProto")
-	proto.RegisterType((*GetReconfigurationStatusConfigChangeProto)(nil), "hadoop.hdfs.GetReconfigurationStatusConfigChangeProto")
-	proto.RegisterType((*GetReconfigurationStatusResponseProto)(nil), "hadoop.hdfs.GetReconfigurationStatusResponseProto")
-	proto.RegisterType((*ListReconfigurablePropertiesRequestProto)(nil), "hadoop.hdfs.ListReconfigurablePropertiesRequestProto")
-	proto.RegisterType((*ListReconfigurablePropertiesResponseProto)(nil), "hadoop.hdfs.ListReconfigurablePropertiesResponseProto")
-}
-
-func init() { proto.RegisterFile("ReconfigurationProtocol.proto", fileDescriptor0) }
 
 var fileDescriptor0 = []byte{
 	// 401 bytes of a gzipped FileDescriptorProto

@@ -68,12 +68,6 @@ func (m *RequestHeaderProto) GetClientProtocolVersion() uint64 {
 	return 0
 }
 
-func init() {
-	proto.RegisterType((*RequestHeaderProto)(nil), "hadoop.common.RequestHeaderProto")
-}
-
-func init() { proto.RegisterFile("ProtobufRpcEngine.proto", fileDescriptor8) }
-
 var fileDescriptor8 = []byte{
 	// 197 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x8f, 0xb1, 0x6a, 0xc3, 0x30,

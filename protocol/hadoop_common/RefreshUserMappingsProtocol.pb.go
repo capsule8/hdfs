@@ -76,15 +76,6 @@ func (*RefreshSuperUserGroupsConfigurationResponseProto) Descriptor() ([]byte, [
 	return fileDescriptor9, []int{3}
 }
 
-func init() {
-	proto.RegisterType((*RefreshUserToGroupsMappingsRequestProto)(nil), "hadoop.common.RefreshUserToGroupsMappingsRequestProto")
-	proto.RegisterType((*RefreshUserToGroupsMappingsResponseProto)(nil), "hadoop.common.RefreshUserToGroupsMappingsResponseProto")
-	proto.RegisterType((*RefreshSuperUserGroupsConfigurationRequestProto)(nil), "hadoop.common.RefreshSuperUserGroupsConfigurationRequestProto")
-	proto.RegisterType((*RefreshSuperUserGroupsConfigurationResponseProto)(nil), "hadoop.common.RefreshSuperUserGroupsConfigurationResponseProto")
-}
-
-func init() { proto.RegisterFile("RefreshUserMappingsProtocol.proto", fileDescriptor9) }
-
 var fileDescriptor9 = []byte{
 	// 249 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x52, 0x0c, 0x4a, 0x4d, 0x2b,

@@ -25,6 +25,8 @@ type ChecksumReader struct {
 
 // NewChecksumReader creates a new ChecksumReader for the given block.
 func NewChecksumReader(block *hdfs.LocatedBlockProto) *ChecksumReader {
+	hdfs.LoadAPI()
+
 	locs := block.GetLocs()
 	datanodes := make([]string, len(locs))
 	for i, loc := range locs {

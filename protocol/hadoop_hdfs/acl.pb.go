@@ -422,28 +422,6 @@ func (m *GetAclStatusResponseProto) GetResult() *AclStatusProto {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*AclEntryProto)(nil), "hadoop.hdfs.AclEntryProto")
-	proto.RegisterType((*AclStatusProto)(nil), "hadoop.hdfs.AclStatusProto")
-	proto.RegisterType((*ModifyAclEntriesRequestProto)(nil), "hadoop.hdfs.ModifyAclEntriesRequestProto")
-	proto.RegisterType((*ModifyAclEntriesResponseProto)(nil), "hadoop.hdfs.ModifyAclEntriesResponseProto")
-	proto.RegisterType((*RemoveAclRequestProto)(nil), "hadoop.hdfs.RemoveAclRequestProto")
-	proto.RegisterType((*RemoveAclResponseProto)(nil), "hadoop.hdfs.RemoveAclResponseProto")
-	proto.RegisterType((*RemoveAclEntriesRequestProto)(nil), "hadoop.hdfs.RemoveAclEntriesRequestProto")
-	proto.RegisterType((*RemoveAclEntriesResponseProto)(nil), "hadoop.hdfs.RemoveAclEntriesResponseProto")
-	proto.RegisterType((*RemoveDefaultAclRequestProto)(nil), "hadoop.hdfs.RemoveDefaultAclRequestProto")
-	proto.RegisterType((*RemoveDefaultAclResponseProto)(nil), "hadoop.hdfs.RemoveDefaultAclResponseProto")
-	proto.RegisterType((*SetAclRequestProto)(nil), "hadoop.hdfs.SetAclRequestProto")
-	proto.RegisterType((*SetAclResponseProto)(nil), "hadoop.hdfs.SetAclResponseProto")
-	proto.RegisterType((*GetAclStatusRequestProto)(nil), "hadoop.hdfs.GetAclStatusRequestProto")
-	proto.RegisterType((*GetAclStatusResponseProto)(nil), "hadoop.hdfs.GetAclStatusResponseProto")
-	proto.RegisterEnum("hadoop.hdfs.AclEntryProto_AclEntryScopeProto", AclEntryProto_AclEntryScopeProto_name, AclEntryProto_AclEntryScopeProto_value)
-	proto.RegisterEnum("hadoop.hdfs.AclEntryProto_AclEntryTypeProto", AclEntryProto_AclEntryTypeProto_name, AclEntryProto_AclEntryTypeProto_value)
-	proto.RegisterEnum("hadoop.hdfs.AclEntryProto_FsActionProto", AclEntryProto_FsActionProto_name, AclEntryProto_FsActionProto_value)
-}
-
-func init() { proto.RegisterFile("acl.proto", fileDescriptor9) }
-
 var fileDescriptor9 = []byte{
 	// 605 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x54, 0xdb, 0x6e, 0xd3, 0x40,

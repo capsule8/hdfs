@@ -31,6 +31,7 @@ type blockReadStream struct {
 }
 
 func newBlockReadStream(reader io.Reader, chunkSize int, checksumTab *crc32.Table) *blockReadStream {
+	hdfs.LoadAPI()
 	return &blockReadStream{
 		reader:      reader,
 		chunkSize:   chunkSize,

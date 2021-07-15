@@ -273,10 +273,12 @@ type TriggerBlockReportRequestProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *TriggerBlockReportRequestProto) Reset()                    { *m = TriggerBlockReportRequestProto{} }
-func (m *TriggerBlockReportRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*TriggerBlockReportRequestProto) ProtoMessage()               {}
-func (*TriggerBlockReportRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{14} }
+func (m *TriggerBlockReportRequestProto) Reset()         { *m = TriggerBlockReportRequestProto{} }
+func (m *TriggerBlockReportRequestProto) String() string { return proto.CompactTextString(m) }
+func (*TriggerBlockReportRequestProto) ProtoMessage()    {}
+func (*TriggerBlockReportRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor6, []int{14}
+}
 
 func (m *TriggerBlockReportRequestProto) GetIncremental() bool {
 	if m != nil && m.Incremental != nil {
@@ -327,29 +329,6 @@ func (m *GetBalancerBandwidthResponseProto) GetBandwidth() uint64 {
 	}
 	return 0
 }
-
-func init() {
-	proto.RegisterType((*GetReplicaVisibleLengthRequestProto)(nil), "hadoop.hdfs.GetReplicaVisibleLengthRequestProto")
-	proto.RegisterType((*GetReplicaVisibleLengthResponseProto)(nil), "hadoop.hdfs.GetReplicaVisibleLengthResponseProto")
-	proto.RegisterType((*RefreshNamenodesRequestProto)(nil), "hadoop.hdfs.RefreshNamenodesRequestProto")
-	proto.RegisterType((*RefreshNamenodesResponseProto)(nil), "hadoop.hdfs.RefreshNamenodesResponseProto")
-	proto.RegisterType((*DeleteBlockPoolRequestProto)(nil), "hadoop.hdfs.DeleteBlockPoolRequestProto")
-	proto.RegisterType((*DeleteBlockPoolResponseProto)(nil), "hadoop.hdfs.DeleteBlockPoolResponseProto")
-	proto.RegisterType((*GetBlockLocalPathInfoRequestProto)(nil), "hadoop.hdfs.GetBlockLocalPathInfoRequestProto")
-	proto.RegisterType((*GetBlockLocalPathInfoResponseProto)(nil), "hadoop.hdfs.GetBlockLocalPathInfoResponseProto")
-	proto.RegisterType((*ShutdownDatanodeRequestProto)(nil), "hadoop.hdfs.ShutdownDatanodeRequestProto")
-	proto.RegisterType((*ShutdownDatanodeResponseProto)(nil), "hadoop.hdfs.ShutdownDatanodeResponseProto")
-	proto.RegisterType((*EvictWritersRequestProto)(nil), "hadoop.hdfs.EvictWritersRequestProto")
-	proto.RegisterType((*EvictWritersResponseProto)(nil), "hadoop.hdfs.EvictWritersResponseProto")
-	proto.RegisterType((*GetDatanodeInfoRequestProto)(nil), "hadoop.hdfs.GetDatanodeInfoRequestProto")
-	proto.RegisterType((*GetDatanodeInfoResponseProto)(nil), "hadoop.hdfs.GetDatanodeInfoResponseProto")
-	proto.RegisterType((*TriggerBlockReportRequestProto)(nil), "hadoop.hdfs.TriggerBlockReportRequestProto")
-	proto.RegisterType((*TriggerBlockReportResponseProto)(nil), "hadoop.hdfs.TriggerBlockReportResponseProto")
-	proto.RegisterType((*GetBalancerBandwidthRequestProto)(nil), "hadoop.hdfs.GetBalancerBandwidthRequestProto")
-	proto.RegisterType((*GetBalancerBandwidthResponseProto)(nil), "hadoop.hdfs.GetBalancerBandwidthResponseProto")
-}
-
-func init() { proto.RegisterFile("ClientDatanodeProtocol.proto", fileDescriptor6) }
 
 var fileDescriptor6 = []byte{
 	// 804 bytes of a gzipped FileDescriptorProto

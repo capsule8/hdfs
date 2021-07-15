@@ -276,22 +276,6 @@ func (m *RemoveXAttrResponseProto) String() string            { return proto.Com
 func (*RemoveXAttrResponseProto) ProtoMessage()               {}
 func (*RemoveXAttrResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{8} }
 
-func init() {
-	proto.RegisterType((*XAttrProto)(nil), "hadoop.hdfs.XAttrProto")
-	proto.RegisterType((*SetXAttrRequestProto)(nil), "hadoop.hdfs.SetXAttrRequestProto")
-	proto.RegisterType((*SetXAttrResponseProto)(nil), "hadoop.hdfs.SetXAttrResponseProto")
-	proto.RegisterType((*GetXAttrsRequestProto)(nil), "hadoop.hdfs.GetXAttrsRequestProto")
-	proto.RegisterType((*GetXAttrsResponseProto)(nil), "hadoop.hdfs.GetXAttrsResponseProto")
-	proto.RegisterType((*ListXAttrsRequestProto)(nil), "hadoop.hdfs.ListXAttrsRequestProto")
-	proto.RegisterType((*ListXAttrsResponseProto)(nil), "hadoop.hdfs.ListXAttrsResponseProto")
-	proto.RegisterType((*RemoveXAttrRequestProto)(nil), "hadoop.hdfs.RemoveXAttrRequestProto")
-	proto.RegisterType((*RemoveXAttrResponseProto)(nil), "hadoop.hdfs.RemoveXAttrResponseProto")
-	proto.RegisterEnum("hadoop.hdfs.XAttrSetFlagProto", XAttrSetFlagProto_name, XAttrSetFlagProto_value)
-	proto.RegisterEnum("hadoop.hdfs.XAttrProto_XAttrNamespaceProto", XAttrProto_XAttrNamespaceProto_name, XAttrProto_XAttrNamespaceProto_value)
-}
-
-func init() { proto.RegisterFile("xattr.proto", fileDescriptor1) }
-
 var fileDescriptor1 = []byte{
 	// 408 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x93, 0xdf, 0x6e, 0xd3, 0x30,

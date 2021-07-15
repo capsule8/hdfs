@@ -132,10 +132,12 @@ type TransitionToActiveRequestProto struct {
 	XXX_unrecognized []byte                         `json:"-"`
 }
 
-func (m *TransitionToActiveRequestProto) Reset()                    { *m = TransitionToActiveRequestProto{} }
-func (m *TransitionToActiveRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*TransitionToActiveRequestProto) ProtoMessage()               {}
-func (*TransitionToActiveRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{3} }
+func (m *TransitionToActiveRequestProto) Reset()         { *m = TransitionToActiveRequestProto{} }
+func (m *TransitionToActiveRequestProto) String() string { return proto.CompactTextString(m) }
+func (*TransitionToActiveRequestProto) ProtoMessage()    {}
+func (*TransitionToActiveRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor11, []int{3}
+}
 
 func (m *TransitionToActiveRequestProto) GetReqInfo() *HAStateChangeRequestInfoProto {
 	if m != nil {
@@ -239,22 +241,6 @@ func (m *GetServiceStatusResponseProto) GetNotReadyReason() string {
 	}
 	return ""
 }
-
-func init() {
-	proto.RegisterType((*HAStateChangeRequestInfoProto)(nil), "hadoop.common.HAStateChangeRequestInfoProto")
-	proto.RegisterType((*MonitorHealthRequestProto)(nil), "hadoop.common.MonitorHealthRequestProto")
-	proto.RegisterType((*MonitorHealthResponseProto)(nil), "hadoop.common.MonitorHealthResponseProto")
-	proto.RegisterType((*TransitionToActiveRequestProto)(nil), "hadoop.common.TransitionToActiveRequestProto")
-	proto.RegisterType((*TransitionToActiveResponseProto)(nil), "hadoop.common.TransitionToActiveResponseProto")
-	proto.RegisterType((*TransitionToStandbyRequestProto)(nil), "hadoop.common.TransitionToStandbyRequestProto")
-	proto.RegisterType((*TransitionToStandbyResponseProto)(nil), "hadoop.common.TransitionToStandbyResponseProto")
-	proto.RegisterType((*GetServiceStatusRequestProto)(nil), "hadoop.common.GetServiceStatusRequestProto")
-	proto.RegisterType((*GetServiceStatusResponseProto)(nil), "hadoop.common.GetServiceStatusResponseProto")
-	proto.RegisterEnum("hadoop.common.HAServiceStateProto", HAServiceStateProto_name, HAServiceStateProto_value)
-	proto.RegisterEnum("hadoop.common.HARequestSource", HARequestSource_name, HARequestSource_value)
-}
-
-func init() { proto.RegisterFile("HAServiceProtocol.proto", fileDescriptor11) }
 
 var fileDescriptor11 = []byte{
 	// 529 bytes of a gzipped FileDescriptorProto
