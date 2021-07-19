@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	hadoop "github.com/colinmarc/hdfs/protocol/hadoop_common"
+	hadoop "github.com/capsule8/hdfs/protocol/hadoop_common"
 	"github.com/golang/protobuf/proto"
 )
 

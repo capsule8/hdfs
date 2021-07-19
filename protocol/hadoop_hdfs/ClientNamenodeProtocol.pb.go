@@ -6,7 +6,7 @@ package hadoop_hdfs
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import _ "github.com/colinmarc/hdfs/protocol/hadoop_common"
+import _ "github.com/capsule8/hdfs/protocol/hadoop_common"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -509,10 +509,12 @@ type UnsetStoragePolicyRequestProto struct {
 	XXX_unrecognized []byte  `json:"-"`
 }
 
-func (m *UnsetStoragePolicyRequestProto) Reset()                    { *m = UnsetStoragePolicyRequestProto{} }
-func (m *UnsetStoragePolicyRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*UnsetStoragePolicyRequestProto) ProtoMessage()               {}
-func (*UnsetStoragePolicyRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{12} }
+func (m *UnsetStoragePolicyRequestProto) Reset()         { *m = UnsetStoragePolicyRequestProto{} }
+func (m *UnsetStoragePolicyRequestProto) String() string { return proto.CompactTextString(m) }
+func (*UnsetStoragePolicyRequestProto) ProtoMessage()    {}
+func (*UnsetStoragePolicyRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{12}
+}
 
 func (m *UnsetStoragePolicyRequestProto) GetSrc() string {
 	if m != nil && m.Src != nil {
@@ -570,10 +572,12 @@ type GetStoragePoliciesRequestProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *GetStoragePoliciesRequestProto) Reset()                    { *m = GetStoragePoliciesRequestProto{} }
-func (m *GetStoragePoliciesRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*GetStoragePoliciesRequestProto) ProtoMessage()               {}
-func (*GetStoragePoliciesRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{16} }
+func (m *GetStoragePoliciesRequestProto) Reset()         { *m = GetStoragePoliciesRequestProto{} }
+func (m *GetStoragePoliciesRequestProto) String() string { return proto.CompactTextString(m) }
+func (*GetStoragePoliciesRequestProto) ProtoMessage()    {}
+func (*GetStoragePoliciesRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{16}
+}
 
 type GetStoragePoliciesResponseProto struct {
 	Policies         []*BlockStoragePolicyProto `protobuf:"bytes,1,rep,name=policies" json:"policies,omitempty"`
@@ -1558,10 +1562,12 @@ type GetDatanodeReportResponseProto struct {
 	XXX_unrecognized []byte               `json:"-"`
 }
 
-func (m *GetDatanodeReportResponseProto) Reset()                    { *m = GetDatanodeReportResponseProto{} }
-func (m *GetDatanodeReportResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*GetDatanodeReportResponseProto) ProtoMessage()               {}
-func (*GetDatanodeReportResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{57} }
+func (m *GetDatanodeReportResponseProto) Reset()         { *m = GetDatanodeReportResponseProto{} }
+func (m *GetDatanodeReportResponseProto) String() string { return proto.CompactTextString(m) }
+func (*GetDatanodeReportResponseProto) ProtoMessage()    {}
+func (*GetDatanodeReportResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{57}
+}
 
 func (m *GetDatanodeReportResponseProto) GetDi() []*DatanodeInfoProto {
 	if m != nil {
@@ -2232,10 +2238,12 @@ type AddCacheDirectiveResponseProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *AddCacheDirectiveResponseProto) Reset()                    { *m = AddCacheDirectiveResponseProto{} }
-func (m *AddCacheDirectiveResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*AddCacheDirectiveResponseProto) ProtoMessage()               {}
-func (*AddCacheDirectiveResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{90} }
+func (m *AddCacheDirectiveResponseProto) Reset()         { *m = AddCacheDirectiveResponseProto{} }
+func (m *AddCacheDirectiveResponseProto) String() string { return proto.CompactTextString(m) }
+func (*AddCacheDirectiveResponseProto) ProtoMessage()    {}
+func (*AddCacheDirectiveResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{90}
+}
 
 func (m *AddCacheDirectiveResponseProto) GetId() int64 {
 	if m != nil && m.Id != nil {
@@ -2681,10 +2689,12 @@ type GetContentSummaryRequestProto struct {
 	XXX_unrecognized []byte  `json:"-"`
 }
 
-func (m *GetContentSummaryRequestProto) Reset()                    { *m = GetContentSummaryRequestProto{} }
-func (m *GetContentSummaryRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*GetContentSummaryRequestProto) ProtoMessage()               {}
-func (*GetContentSummaryRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{111} }
+func (m *GetContentSummaryRequestProto) Reset()         { *m = GetContentSummaryRequestProto{} }
+func (m *GetContentSummaryRequestProto) String() string { return proto.CompactTextString(m) }
+func (*GetContentSummaryRequestProto) ProtoMessage()    {}
+func (*GetContentSummaryRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{111}
+}
 
 func (m *GetContentSummaryRequestProto) GetPath() string {
 	if m != nil && m.Path != nil {
@@ -3270,10 +3280,12 @@ type DisallowSnapshotResponseProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *DisallowSnapshotResponseProto) Reset()                    { *m = DisallowSnapshotResponseProto{} }
-func (m *DisallowSnapshotResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*DisallowSnapshotResponseProto) ProtoMessage()               {}
-func (*DisallowSnapshotResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{140} }
+func (m *DisallowSnapshotResponseProto) Reset()         { *m = DisallowSnapshotResponseProto{} }
+func (m *DisallowSnapshotResponseProto) String() string { return proto.CompactTextString(m) }
+func (*DisallowSnapshotResponseProto) ProtoMessage()    {}
+func (*DisallowSnapshotResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{140}
+}
 
 type DeleteSnapshotRequestProto struct {
 	SnapshotRoot     *string `protobuf:"bytes,1,req,name=snapshotRoot" json:"snapshotRoot,omitempty"`
@@ -3395,10 +3407,12 @@ type GetEditsFromTxidResponseProto struct {
 	XXX_unrecognized []byte           `json:"-"`
 }
 
-func (m *GetEditsFromTxidResponseProto) Reset()                    { *m = GetEditsFromTxidResponseProto{} }
-func (m *GetEditsFromTxidResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*GetEditsFromTxidResponseProto) ProtoMessage()               {}
-func (*GetEditsFromTxidResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{148} }
+func (m *GetEditsFromTxidResponseProto) Reset()         { *m = GetEditsFromTxidResponseProto{} }
+func (m *GetEditsFromTxidResponseProto) String() string { return proto.CompactTextString(m) }
+func (*GetEditsFromTxidResponseProto) ProtoMessage()    {}
+func (*GetEditsFromTxidResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor4, []int{148}
+}
 
 func (m *GetEditsFromTxidResponseProto) GetEventsList() *EventsListProto {
 	if m != nil {

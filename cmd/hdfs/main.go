@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/colinmarc/hdfs"
+	"github.com/capsule8/hdfs"
 	"github.com/pborman/getopt"
 )
 

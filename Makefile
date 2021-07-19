@@ -4,7 +4,7 @@ GENERATED_PROTOS = $(shell echo "$(HADOOP_HDFS_PROTOS) $(HADOOP_COMMON_PROTOS)" 
 SOURCES = $(shell find . -name '*.go') $(GENERATED_PROTOS)
 
 # Protobuf needs one of these for every 'import "foo.proto"' in .protoc files.
-PROTO_MAPPING = MSecurity.proto=github.com/colinmarc/hdfs/protocol/hadoop_common
+PROTO_MAPPING = MSecurity.proto=github.com/capsule8/hdfs/protocol/hadoop_common
 
 TRAVIS_TAG ?= $(shell git rev-parse HEAD)
 ARCH = $(shell go env GOOS)-$(shell go env GOARCH)
@@ -20,13 +20,13 @@ clean-protos:
 	find . -name *.pb.go | xargs rm
 
 hdfs: clean $(SOURCES)
-	go build -ldflags "-X main.version=$(TRAVIS_TAG)" ./cmd/hdfs
+	GO111MODULE=off go build -ldflags "-X main.version=$(TRAVIS_TAG)" ./cmd/hdfs
 
 install: get-deps
 	go install ./...
 
 test: hdfs
-	go test -v -race $(shell go list ./... | grep -v vendor)
+	GO111MODULE=off go test -v -race $(shell go list ./... | grep -v vendor)
 	bats ./cmd/hdfs/test/*.bats
 
 clean:

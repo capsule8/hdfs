@@ -6,7 +6,7 @@ package hadoop_hdfs
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import hadoop_common "github.com/colinmarc/hdfs/protocol/hadoop_common"
+import hadoop_common "github.com/capsule8/hdfs/protocol/hadoop_common"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -273,10 +273,12 @@ type TriggerBlockReportRequestProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *TriggerBlockReportRequestProto) Reset()                    { *m = TriggerBlockReportRequestProto{} }
-func (m *TriggerBlockReportRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*TriggerBlockReportRequestProto) ProtoMessage()               {}
-func (*TriggerBlockReportRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{14} }
+func (m *TriggerBlockReportRequestProto) Reset()         { *m = TriggerBlockReportRequestProto{} }
+func (m *TriggerBlockReportRequestProto) String() string { return proto.CompactTextString(m) }
+func (*TriggerBlockReportRequestProto) ProtoMessage()    {}
+func (*TriggerBlockReportRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor6, []int{14}
+}
 
 func (m *TriggerBlockReportRequestProto) GetIncremental() bool {
 	if m != nil && m.Incremental != nil {
