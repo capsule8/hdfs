@@ -80,6 +80,7 @@ type namenodeHost struct {
 // You probably want to use hdfs.New instead, which provides a higher-level
 // interface.
 func NewNamenodeConnection(address string, user string) (*NamenodeConnection, error) {
+	hadoop.LoadAPI()
 	return NewNamenodeConnectionWithOptions(NamenodeConnectionOptions{
 		Addresses: []string{address},
 		User:      user,
@@ -89,6 +90,7 @@ func NewNamenodeConnection(address string, user string) (*NamenodeConnection, er
 // NewNamenodeConnectionWithOptions creates a new connection to a namenode with
 // the given options and performs an initial handshake.
 func NewNamenodeConnectionWithOptions(options NamenodeConnectionOptions) (*NamenodeConnection, error) {
+	hadoop.LoadAPI()
 	// Build the list of hosts to be used for failover.
 	hostList := make([]*namenodeHost, len(options.Addresses))
 	for i, addr := range options.Addresses {
@@ -118,6 +120,7 @@ func NewNamenodeConnectionWithOptions(options NamenodeConnectionOptions) (*Namen
 //
 // Deprecated: use the higher-level hdfs.New or NewNamenodeConnection instead.
 func WrapNamenodeConnection(conn net.Conn, user string) (*NamenodeConnection, error) {
+	hadoop.LoadAPI()
 	// The ClientID is reused here both in the RPC headers (which requires a
 	// "globally unique" ID) and as the "client name" in various requests.
 	clientId := newClientID()

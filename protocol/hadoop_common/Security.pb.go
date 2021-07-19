@@ -77,10 +77,12 @@ type GetDelegationTokenResponseProto struct {
 	XXX_unrecognized []byte      `json:"-"`
 }
 
-func (m *GetDelegationTokenResponseProto) Reset()                    { *m = GetDelegationTokenResponseProto{} }
-func (m *GetDelegationTokenResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*GetDelegationTokenResponseProto) ProtoMessage()               {}
-func (*GetDelegationTokenResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{2} }
+func (m *GetDelegationTokenResponseProto) Reset()         { *m = GetDelegationTokenResponseProto{} }
+func (m *GetDelegationTokenResponseProto) String() string { return proto.CompactTextString(m) }
+func (*GetDelegationTokenResponseProto) ProtoMessage()    {}
+func (*GetDelegationTokenResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor7, []int{2}
+}
 
 func (m *GetDelegationTokenResponseProto) GetToken() *TokenProto {
 	if m != nil {
@@ -156,18 +158,6 @@ func (*CancelDelegationTokenResponseProto) ProtoMessage()    {}
 func (*CancelDelegationTokenResponseProto) Descriptor() ([]byte, []int) {
 	return fileDescriptor7, []int{6}
 }
-
-func init() {
-	proto.RegisterType((*TokenProto)(nil), "hadoop.common.TokenProto")
-	proto.RegisterType((*GetDelegationTokenRequestProto)(nil), "hadoop.common.GetDelegationTokenRequestProto")
-	proto.RegisterType((*GetDelegationTokenResponseProto)(nil), "hadoop.common.GetDelegationTokenResponseProto")
-	proto.RegisterType((*RenewDelegationTokenRequestProto)(nil), "hadoop.common.RenewDelegationTokenRequestProto")
-	proto.RegisterType((*RenewDelegationTokenResponseProto)(nil), "hadoop.common.RenewDelegationTokenResponseProto")
-	proto.RegisterType((*CancelDelegationTokenRequestProto)(nil), "hadoop.common.CancelDelegationTokenRequestProto")
-	proto.RegisterType((*CancelDelegationTokenResponseProto)(nil), "hadoop.common.CancelDelegationTokenResponseProto")
-}
-
-func init() { proto.RegisterFile("Security.proto", fileDescriptor7) }
 
 var fileDescriptor7 = []byte{
 	// 303 bytes of a gzipped FileDescriptorProto

@@ -50,13 +50,6 @@ func (m *GetGroupsForUserResponseProto) GetGroups() []string {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*GetGroupsForUserRequestProto)(nil), "hadoop.common.GetGroupsForUserRequestProto")
-	proto.RegisterType((*GetGroupsForUserResponseProto)(nil), "hadoop.common.GetGroupsForUserResponseProto")
-}
-
-func init() { proto.RegisterFile("GetUserMappingsProtocol.proto", fileDescriptor10) }
-
 var fileDescriptor10 = []byte{
 	// 213 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x92, 0x75, 0x4f, 0x2d, 0x09,

@@ -34,13 +34,6 @@ func (m *RefreshServiceAclResponseProto) String() string            { return pro
 func (*RefreshServiceAclResponseProto) ProtoMessage()               {}
 func (*RefreshServiceAclResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
 
-func init() {
-	proto.RegisterType((*RefreshServiceAclRequestProto)(nil), "hadoop.common.RefreshServiceAclRequestProto")
-	proto.RegisterType((*RefreshServiceAclResponseProto)(nil), "hadoop.common.RefreshServiceAclResponseProto")
-}
-
-func init() { proto.RegisterFile("RefreshAuthorizationPolicyProtocol.proto", fileDescriptor2) }
-
 var fileDescriptor2 = []byte{
 	// 189 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0xd2, 0x08, 0x4a, 0x4d, 0x2b,

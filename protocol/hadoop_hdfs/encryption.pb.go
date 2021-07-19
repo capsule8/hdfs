@@ -55,10 +55,12 @@ type ListEncryptionZonesRequestProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *ListEncryptionZonesRequestProto) Reset()                    { *m = ListEncryptionZonesRequestProto{} }
-func (m *ListEncryptionZonesRequestProto) String() string            { return proto.CompactTextString(m) }
-func (*ListEncryptionZonesRequestProto) ProtoMessage()               {}
-func (*ListEncryptionZonesRequestProto) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{2} }
+func (m *ListEncryptionZonesRequestProto) Reset()         { *m = ListEncryptionZonesRequestProto{} }
+func (m *ListEncryptionZonesRequestProto) String() string { return proto.CompactTextString(m) }
+func (*ListEncryptionZonesRequestProto) ProtoMessage()    {}
+func (*ListEncryptionZonesRequestProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{2}
+}
 
 func (m *ListEncryptionZonesRequestProto) GetId() int64 {
 	if m != nil && m.Id != nil {
@@ -176,18 +178,6 @@ func (m *GetEZForPathResponseProto) GetZone() *EncryptionZoneProto {
 	}
 	return nil
 }
-
-func init() {
-	proto.RegisterType((*CreateEncryptionZoneRequestProto)(nil), "hadoop.hdfs.CreateEncryptionZoneRequestProto")
-	proto.RegisterType((*CreateEncryptionZoneResponseProto)(nil), "hadoop.hdfs.CreateEncryptionZoneResponseProto")
-	proto.RegisterType((*ListEncryptionZonesRequestProto)(nil), "hadoop.hdfs.ListEncryptionZonesRequestProto")
-	proto.RegisterType((*EncryptionZoneProto)(nil), "hadoop.hdfs.EncryptionZoneProto")
-	proto.RegisterType((*ListEncryptionZonesResponseProto)(nil), "hadoop.hdfs.ListEncryptionZonesResponseProto")
-	proto.RegisterType((*GetEZForPathRequestProto)(nil), "hadoop.hdfs.GetEZForPathRequestProto")
-	proto.RegisterType((*GetEZForPathResponseProto)(nil), "hadoop.hdfs.GetEZForPathResponseProto")
-}
-
-func init() { proto.RegisterFile("encryption.proto", fileDescriptor2) }
 
 var fileDescriptor2 = []byte{
 	// 361 bytes of a gzipped FileDescriptorProto

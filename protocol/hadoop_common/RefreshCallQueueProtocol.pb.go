@@ -34,13 +34,6 @@ func (m *RefreshCallQueueResponseProto) String() string            { return prot
 func (*RefreshCallQueueResponseProto) ProtoMessage()               {}
 func (*RefreshCallQueueResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
 
-func init() {
-	proto.RegisterType((*RefreshCallQueueRequestProto)(nil), "hadoop.common.RefreshCallQueueRequestProto")
-	proto.RegisterType((*RefreshCallQueueResponseProto)(nil), "hadoop.common.RefreshCallQueueResponseProto")
-}
-
-func init() { proto.RegisterFile("RefreshCallQueueProtocol.proto", fileDescriptor6) }
-
 var fileDescriptor6 = []byte{
 	// 168 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x92, 0x0b, 0x4a, 0x4d, 0x2b,

@@ -185,18 +185,6 @@ func (m *BlockECReconstructionInfoProto) GetEcPolicy() *ErasureCodingPolicyProto
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*SetErasureCodingPolicyRequestProto)(nil), "hadoop.hdfs.SetErasureCodingPolicyRequestProto")
-	proto.RegisterType((*SetErasureCodingPolicyResponseProto)(nil), "hadoop.hdfs.SetErasureCodingPolicyResponseProto")
-	proto.RegisterType((*GetErasureCodingPoliciesRequestProto)(nil), "hadoop.hdfs.GetErasureCodingPoliciesRequestProto")
-	proto.RegisterType((*GetErasureCodingPoliciesResponseProto)(nil), "hadoop.hdfs.GetErasureCodingPoliciesResponseProto")
-	proto.RegisterType((*GetErasureCodingPolicyRequestProto)(nil), "hadoop.hdfs.GetErasureCodingPolicyRequestProto")
-	proto.RegisterType((*GetErasureCodingPolicyResponseProto)(nil), "hadoop.hdfs.GetErasureCodingPolicyResponseProto")
-	proto.RegisterType((*BlockECReconstructionInfoProto)(nil), "hadoop.hdfs.BlockECReconstructionInfoProto")
-}
-
-func init() { proto.RegisterFile("erasurecoding.proto", fileDescriptor3) }
-
 var fileDescriptor3 = []byte{
 	// 404 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x9c, 0x93, 0xcf, 0x6e, 0xd4, 0x30,

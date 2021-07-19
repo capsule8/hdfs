@@ -582,24 +582,6 @@ func (m *EventsListProto) GetBatch() []*EventBatchProto {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*EventProto)(nil), "hadoop.hdfs.EventProto")
-	proto.RegisterType((*EventBatchProto)(nil), "hadoop.hdfs.EventBatchProto")
-	proto.RegisterType((*CreateEventProto)(nil), "hadoop.hdfs.CreateEventProto")
-	proto.RegisterType((*CloseEventProto)(nil), "hadoop.hdfs.CloseEventProto")
-	proto.RegisterType((*TruncateEventProto)(nil), "hadoop.hdfs.TruncateEventProto")
-	proto.RegisterType((*AppendEventProto)(nil), "hadoop.hdfs.AppendEventProto")
-	proto.RegisterType((*RenameEventProto)(nil), "hadoop.hdfs.RenameEventProto")
-	proto.RegisterType((*MetadataUpdateEventProto)(nil), "hadoop.hdfs.MetadataUpdateEventProto")
-	proto.RegisterType((*UnlinkEventProto)(nil), "hadoop.hdfs.UnlinkEventProto")
-	proto.RegisterType((*EventsListProto)(nil), "hadoop.hdfs.EventsListProto")
-	proto.RegisterEnum("hadoop.hdfs.EventType", EventType_name, EventType_value)
-	proto.RegisterEnum("hadoop.hdfs.INodeType", INodeType_name, INodeType_value)
-	proto.RegisterEnum("hadoop.hdfs.MetadataUpdateType", MetadataUpdateType_name, MetadataUpdateType_value)
-}
-
-func init() { proto.RegisterFile("inotify.proto", fileDescriptor7) }
-
 var fileDescriptor7 = []byte{
 	// 917 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x56, 0x5f, 0x6f, 0xe3, 0x44,

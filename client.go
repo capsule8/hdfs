@@ -42,6 +42,8 @@ func Username() (string, error) {
 func NewClient(options ClientOptions) (*Client, error) {
 	var err error
 
+	hdfs.LoadAPI()
+
 	if options.User == "" {
 		options.User, err = Username()
 		if err != nil {

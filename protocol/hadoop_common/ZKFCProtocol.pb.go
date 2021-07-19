@@ -56,15 +56,6 @@ func (m *GracefulFailoverResponseProto) String() string            { return prot
 func (*GracefulFailoverResponseProto) ProtoMessage()               {}
 func (*GracefulFailoverResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{3} }
 
-func init() {
-	proto.RegisterType((*CedeActiveRequestProto)(nil), "hadoop.common.CedeActiveRequestProto")
-	proto.RegisterType((*CedeActiveResponseProto)(nil), "hadoop.common.CedeActiveResponseProto")
-	proto.RegisterType((*GracefulFailoverRequestProto)(nil), "hadoop.common.GracefulFailoverRequestProto")
-	proto.RegisterType((*GracefulFailoverResponseProto)(nil), "hadoop.common.GracefulFailoverResponseProto")
-}
-
-func init() { proto.RegisterFile("ZKFCProtocol.proto", fileDescriptor1) }
-
 var fileDescriptor1 = []byte{
 	// 238 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x8a, 0xf2, 0x76, 0x73,

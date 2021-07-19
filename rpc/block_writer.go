@@ -32,6 +32,7 @@ type BlockWriter struct {
 // set up a replication pipeline, and connect to the "best" datanode based on
 // any previously seen failures.
 func NewBlockWriter(block *hdfs.LocatedBlockProto, namenode *NamenodeConnection, blockSize int64) *BlockWriter {
+	hdfs.LoadAPI()
 	bw := &BlockWriter{
 		clientName: namenode.ClientName(),
 		block:      block,

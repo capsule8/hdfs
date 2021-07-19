@@ -58,6 +58,7 @@ func (ae ackError) Error() string {
 var ErrInvalidSeqno = errors.New("Invalid ack sequence number")
 
 func newBlockWriteStream(conn io.ReadWriter, offset int64) *blockWriteStream {
+	hdfs.LoadAPI()
 	s := &blockWriteStream{
 		conn:     conn,
 		offset:   offset,

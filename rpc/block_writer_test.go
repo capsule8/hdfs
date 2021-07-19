@@ -13,6 +13,7 @@ import (
 )
 
 func createBlock(t *testing.T, name string) *BlockWriter {
+	hdfs.LoadAPI()
 	namenode := getNamenode(t)
 	blockSize := int64(1048576)
 

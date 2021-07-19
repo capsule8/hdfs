@@ -2053,54 +2053,6 @@ func (m *StorageUuidsProto) GetStorageUuids() []string {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*ExtendedBlockProto)(nil), "hadoop.hdfs.ExtendedBlockProto")
-	proto.RegisterType((*DatanodeIDProto)(nil), "hadoop.hdfs.DatanodeIDProto")
-	proto.RegisterType((*DatanodeLocalInfoProto)(nil), "hadoop.hdfs.DatanodeLocalInfoProto")
-	proto.RegisterType((*DatanodeInfosProto)(nil), "hadoop.hdfs.DatanodeInfosProto")
-	proto.RegisterType((*DatanodeInfoProto)(nil), "hadoop.hdfs.DatanodeInfoProto")
-	proto.RegisterType((*DatanodeStorageProto)(nil), "hadoop.hdfs.DatanodeStorageProto")
-	proto.RegisterType((*StorageReportProto)(nil), "hadoop.hdfs.StorageReportProto")
-	proto.RegisterType((*ContentSummaryProto)(nil), "hadoop.hdfs.ContentSummaryProto")
-	proto.RegisterType((*QuotaUsageProto)(nil), "hadoop.hdfs.QuotaUsageProto")
-	proto.RegisterType((*StorageTypeQuotaInfosProto)(nil), "hadoop.hdfs.StorageTypeQuotaInfosProto")
-	proto.RegisterType((*StorageTypeQuotaInfoProto)(nil), "hadoop.hdfs.StorageTypeQuotaInfoProto")
-	proto.RegisterType((*CorruptFileBlocksProto)(nil), "hadoop.hdfs.CorruptFileBlocksProto")
-	proto.RegisterType((*FsPermissionProto)(nil), "hadoop.hdfs.FsPermissionProto")
-	proto.RegisterType((*StorageTypesProto)(nil), "hadoop.hdfs.StorageTypesProto")
-	proto.RegisterType((*BlockStoragePolicyProto)(nil), "hadoop.hdfs.BlockStoragePolicyProto")
-	proto.RegisterType((*LocatedBlockProto)(nil), "hadoop.hdfs.LocatedBlockProto")
-	proto.RegisterType((*DataEncryptionKeyProto)(nil), "hadoop.hdfs.DataEncryptionKeyProto")
-	proto.RegisterType((*FileEncryptionInfoProto)(nil), "hadoop.hdfs.FileEncryptionInfoProto")
-	proto.RegisterType((*PerFileEncryptionInfoProto)(nil), "hadoop.hdfs.PerFileEncryptionInfoProto")
-	proto.RegisterType((*ZoneEncryptionInfoProto)(nil), "hadoop.hdfs.ZoneEncryptionInfoProto")
-	proto.RegisterType((*CipherOptionProto)(nil), "hadoop.hdfs.CipherOptionProto")
-	proto.RegisterType((*LocatedBlocksProto)(nil), "hadoop.hdfs.LocatedBlocksProto")
-	proto.RegisterType((*ECSchemaOptionEntryProto)(nil), "hadoop.hdfs.ECSchemaOptionEntryProto")
-	proto.RegisterType((*ECSchemaProto)(nil), "hadoop.hdfs.ECSchemaProto")
-	proto.RegisterType((*ErasureCodingPolicyProto)(nil), "hadoop.hdfs.ErasureCodingPolicyProto")
-	proto.RegisterType((*HdfsFileStatusProto)(nil), "hadoop.hdfs.HdfsFileStatusProto")
-	proto.RegisterType((*FsServerDefaultsProto)(nil), "hadoop.hdfs.FsServerDefaultsProto")
-	proto.RegisterType((*DirectoryListingProto)(nil), "hadoop.hdfs.DirectoryListingProto")
-	proto.RegisterType((*SnapshottableDirectoryStatusProto)(nil), "hadoop.hdfs.SnapshottableDirectoryStatusProto")
-	proto.RegisterType((*SnapshottableDirectoryListingProto)(nil), "hadoop.hdfs.SnapshottableDirectoryListingProto")
-	proto.RegisterType((*SnapshotDiffReportEntryProto)(nil), "hadoop.hdfs.SnapshotDiffReportEntryProto")
-	proto.RegisterType((*SnapshotDiffReportProto)(nil), "hadoop.hdfs.SnapshotDiffReportProto")
-	proto.RegisterType((*BlockProto)(nil), "hadoop.hdfs.BlockProto")
-	proto.RegisterType((*SnapshotInfoProto)(nil), "hadoop.hdfs.SnapshotInfoProto")
-	proto.RegisterType((*RollingUpgradeStatusProto)(nil), "hadoop.hdfs.RollingUpgradeStatusProto")
-	proto.RegisterType((*StorageUuidsProto)(nil), "hadoop.hdfs.StorageUuidsProto")
-	proto.RegisterEnum("hadoop.hdfs.StorageTypeProto", StorageTypeProto_name, StorageTypeProto_value)
-	proto.RegisterEnum("hadoop.hdfs.CipherSuiteProto", CipherSuiteProto_name, CipherSuiteProto_value)
-	proto.RegisterEnum("hadoop.hdfs.CryptoProtocolVersionProto", CryptoProtocolVersionProto_name, CryptoProtocolVersionProto_value)
-	proto.RegisterEnum("hadoop.hdfs.ChecksumTypeProto", ChecksumTypeProto_name, ChecksumTypeProto_value)
-	proto.RegisterEnum("hadoop.hdfs.DatanodeInfoProto_AdminState", DatanodeInfoProto_AdminState_name, DatanodeInfoProto_AdminState_value)
-	proto.RegisterEnum("hadoop.hdfs.DatanodeStorageProto_StorageState", DatanodeStorageProto_StorageState_name, DatanodeStorageProto_StorageState_value)
-	proto.RegisterEnum("hadoop.hdfs.HdfsFileStatusProto_FileType", HdfsFileStatusProto_FileType_name, HdfsFileStatusProto_FileType_value)
-}
-
-func init() { proto.RegisterFile("hdfs.proto", fileDescriptor8) }
-
 var fileDescriptor8 = []byte{
 	// 2923 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x59, 0xcd, 0x73, 0x1b, 0xc7,
