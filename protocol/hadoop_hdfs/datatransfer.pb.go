@@ -1249,43 +1249,6 @@ func (m *OpCustomProto) GetCustomId() string {
 	return ""
 }
 
-func init() {
-	proto.RegisterType((*DataTransferEncryptorMessageProto)(nil), "hadoop.hdfs.DataTransferEncryptorMessageProto")
-	proto.RegisterType((*BaseHeaderProto)(nil), "hadoop.hdfs.BaseHeaderProto")
-	proto.RegisterType((*DataTransferTraceInfoProto)(nil), "hadoop.hdfs.DataTransferTraceInfoProto")
-	proto.RegisterType((*ClientOperationHeaderProto)(nil), "hadoop.hdfs.ClientOperationHeaderProto")
-	proto.RegisterType((*CachingStrategyProto)(nil), "hadoop.hdfs.CachingStrategyProto")
-	proto.RegisterType((*OpReadBlockProto)(nil), "hadoop.hdfs.OpReadBlockProto")
-	proto.RegisterType((*ChecksumProto)(nil), "hadoop.hdfs.ChecksumProto")
-	proto.RegisterType((*OpWriteBlockProto)(nil), "hadoop.hdfs.OpWriteBlockProto")
-	proto.RegisterType((*OpTransferBlockProto)(nil), "hadoop.hdfs.OpTransferBlockProto")
-	proto.RegisterType((*OpReplaceBlockProto)(nil), "hadoop.hdfs.OpReplaceBlockProto")
-	proto.RegisterType((*OpCopyBlockProto)(nil), "hadoop.hdfs.OpCopyBlockProto")
-	proto.RegisterType((*OpBlockChecksumProto)(nil), "hadoop.hdfs.OpBlockChecksumProto")
-	proto.RegisterType((*OpBlockGroupChecksumProto)(nil), "hadoop.hdfs.OpBlockGroupChecksumProto")
-	proto.RegisterType((*ShortCircuitShmIdProto)(nil), "hadoop.hdfs.ShortCircuitShmIdProto")
-	proto.RegisterType((*ShortCircuitShmSlotProto)(nil), "hadoop.hdfs.ShortCircuitShmSlotProto")
-	proto.RegisterType((*OpRequestShortCircuitAccessProto)(nil), "hadoop.hdfs.OpRequestShortCircuitAccessProto")
-	proto.RegisterType((*ReleaseShortCircuitAccessRequestProto)(nil), "hadoop.hdfs.ReleaseShortCircuitAccessRequestProto")
-	proto.RegisterType((*ReleaseShortCircuitAccessResponseProto)(nil), "hadoop.hdfs.ReleaseShortCircuitAccessResponseProto")
-	proto.RegisterType((*ShortCircuitShmRequestProto)(nil), "hadoop.hdfs.ShortCircuitShmRequestProto")
-	proto.RegisterType((*ShortCircuitShmResponseProto)(nil), "hadoop.hdfs.ShortCircuitShmResponseProto")
-	proto.RegisterType((*PacketHeaderProto)(nil), "hadoop.hdfs.PacketHeaderProto")
-	proto.RegisterType((*PipelineAckProto)(nil), "hadoop.hdfs.PipelineAckProto")
-	proto.RegisterType((*ReadOpChecksumInfoProto)(nil), "hadoop.hdfs.ReadOpChecksumInfoProto")
-	proto.RegisterType((*BlockOpResponseProto)(nil), "hadoop.hdfs.BlockOpResponseProto")
-	proto.RegisterType((*ClientReadStatusProto)(nil), "hadoop.hdfs.ClientReadStatusProto")
-	proto.RegisterType((*DNTransferAckProto)(nil), "hadoop.hdfs.DNTransferAckProto")
-	proto.RegisterType((*OpBlockChecksumResponseProto)(nil), "hadoop.hdfs.OpBlockChecksumResponseProto")
-	proto.RegisterType((*OpCustomProto)(nil), "hadoop.hdfs.OpCustomProto")
-	proto.RegisterEnum("hadoop.hdfs.Status", Status_name, Status_value)
-	proto.RegisterEnum("hadoop.hdfs.ShortCircuitFdResponse", ShortCircuitFdResponse_name, ShortCircuitFdResponse_value)
-	proto.RegisterEnum("hadoop.hdfs.DataTransferEncryptorMessageProto_DataTransferEncryptorStatus", DataTransferEncryptorMessageProto_DataTransferEncryptorStatus_name, DataTransferEncryptorMessageProto_DataTransferEncryptorStatus_value)
-	proto.RegisterEnum("hadoop.hdfs.OpWriteBlockProto_BlockConstructionStage", OpWriteBlockProto_BlockConstructionStage_name, OpWriteBlockProto_BlockConstructionStage_value)
-}
-
-func init() { proto.RegisterFile("datatransfer.proto", fileDescriptor5) }
-
 var fileDescriptor5 = []byte{
 	// 2039 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x58, 0x4b, 0x73, 0xdc, 0xc6,

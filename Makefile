@@ -15,12 +15,18 @@ all: hdfs
 %.pb.go: $(HADOOP_HDFS_PROTOS) $(HADOOP_COMMON_PROTOS)
 	protoc --go_out='$(PROTO_MAPPING):protocol/hadoop_common' -Iprotocol/hadoop_common -Iprotocol/hadoop_hdfs $(HADOOP_COMMON_PROTOS)
 	protoc --go_out='$(PROTO_MAPPING):protocol/hadoop_hdfs' -Iprotocol/hadoop_common -Iprotocol/hadoop_hdfs $(HADOOP_HDFS_PROTOS)
+	go run protocol/gen/main.go -files "protocol/hadoop_common/*.pb.go" -output ../hadoop_common/load_api.go
+	go run protocol/gen/main.go -files "protocol/hadoop_hdfs/*.pb.go" -output protocol/hadoop_hdfs/load_api.go
 
 clean-protos:
 	find . -name *.pb.go | xargs rm
 
 hdfs: clean $(SOURCES)
 	GO111MODULE=off go build -ldflags "-X main.version=$(TRAVIS_TAG)" ./cmd/hdfs
+
+remove-inits:
+	go run protocol/gen/main.go -files "protocol/hadoop_common/*.pb.go" -output protocol/hadoop_common/load_api.go
+	go run protocol/gen/main.go -files "protocol/hadoop_hdfs/*.pb.go" -output protocol/hadoop_hdfs/load_api.go
 
 install: get-deps
 	go install ./...

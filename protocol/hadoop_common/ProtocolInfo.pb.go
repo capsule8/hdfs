@@ -156,17 +156,6 @@ func (m *ProtocolSignatureProto) GetMethods() []uint32 {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*GetProtocolVersionsRequestProto)(nil), "hadoop.common.GetProtocolVersionsRequestProto")
-	proto.RegisterType((*ProtocolVersionProto)(nil), "hadoop.common.ProtocolVersionProto")
-	proto.RegisterType((*GetProtocolVersionsResponseProto)(nil), "hadoop.common.GetProtocolVersionsResponseProto")
-	proto.RegisterType((*GetProtocolSignatureRequestProto)(nil), "hadoop.common.GetProtocolSignatureRequestProto")
-	proto.RegisterType((*GetProtocolSignatureResponseProto)(nil), "hadoop.common.GetProtocolSignatureResponseProto")
-	proto.RegisterType((*ProtocolSignatureProto)(nil), "hadoop.common.ProtocolSignatureProto")
-}
-
-func init() { proto.RegisterFile("ProtocolInfo.proto", fileDescriptor12) }
-
 var fileDescriptor12 = []byte{
 	// 339 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x53, 0x51, 0x4b, 0xf3, 0x30,

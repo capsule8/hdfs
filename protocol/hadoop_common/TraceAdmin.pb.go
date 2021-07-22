@@ -151,23 +151,12 @@ type RemoveSpanReceiverResponseProto struct {
 	XXX_unrecognized []byte `json:"-"`
 }
 
-func (m *RemoveSpanReceiverResponseProto) Reset()                    { *m = RemoveSpanReceiverResponseProto{} }
-func (m *RemoveSpanReceiverResponseProto) String() string            { return proto.CompactTextString(m) }
-func (*RemoveSpanReceiverResponseProto) ProtoMessage()               {}
-func (*RemoveSpanReceiverResponseProto) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{7} }
-
-func init() {
-	proto.RegisterType((*ListSpanReceiversRequestProto)(nil), "hadoop.common.ListSpanReceiversRequestProto")
-	proto.RegisterType((*SpanReceiverListInfo)(nil), "hadoop.common.SpanReceiverListInfo")
-	proto.RegisterType((*ListSpanReceiversResponseProto)(nil), "hadoop.common.ListSpanReceiversResponseProto")
-	proto.RegisterType((*ConfigPair)(nil), "hadoop.common.ConfigPair")
-	proto.RegisterType((*AddSpanReceiverRequestProto)(nil), "hadoop.common.AddSpanReceiverRequestProto")
-	proto.RegisterType((*AddSpanReceiverResponseProto)(nil), "hadoop.common.AddSpanReceiverResponseProto")
-	proto.RegisterType((*RemoveSpanReceiverRequestProto)(nil), "hadoop.common.RemoveSpanReceiverRequestProto")
-	proto.RegisterType((*RemoveSpanReceiverResponseProto)(nil), "hadoop.common.RemoveSpanReceiverResponseProto")
+func (m *RemoveSpanReceiverResponseProto) Reset()         { *m = RemoveSpanReceiverResponseProto{} }
+func (m *RemoveSpanReceiverResponseProto) String() string { return proto.CompactTextString(m) }
+func (*RemoveSpanReceiverResponseProto) ProtoMessage()    {}
+func (*RemoveSpanReceiverResponseProto) Descriptor() ([]byte, []int) {
+	return fileDescriptor5, []int{7}
 }
-
-func init() { proto.RegisterFile("TraceAdmin.proto", fileDescriptor5) }
 
 var fileDescriptor5 = []byte{
 	// 385 bytes of a gzipped FileDescriptorProto

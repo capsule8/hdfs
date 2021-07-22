@@ -95,14 +95,6 @@ func (m *GenericRefreshResponseCollectionProto) GetResponses() []*GenericRefresh
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*GenericRefreshRequestProto)(nil), "hadoop.common.GenericRefreshRequestProto")
-	proto.RegisterType((*GenericRefreshResponseProto)(nil), "hadoop.common.GenericRefreshResponseProto")
-	proto.RegisterType((*GenericRefreshResponseCollectionProto)(nil), "hadoop.common.GenericRefreshResponseCollectionProto")
-}
-
-func init() { proto.RegisterFile("GenericRefreshProtocol.proto", fileDescriptor3) }
-
 var fileDescriptor3 = []byte{
 	// 293 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x92, 0xcf, 0x4a, 0xc3, 0x40,

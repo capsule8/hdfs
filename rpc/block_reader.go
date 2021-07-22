@@ -29,6 +29,7 @@ type BlockReader struct {
 // security token from the namenode. It will connect (lazily) to one of the
 // provided datanode locations based on which datanodes have seen failures.
 func NewBlockReader(block *hdfs.LocatedBlockProto, offset int64, clientName string) *BlockReader {
+	hdfs.LoadAPI()
 	locs := block.GetLocs()
 	datanodes := make([]string, len(locs))
 	for i, loc := range locs {

@@ -330,29 +330,6 @@ func (m *GetBalancerBandwidthResponseProto) GetBandwidth() uint64 {
 	return 0
 }
 
-func init() {
-	proto.RegisterType((*GetReplicaVisibleLengthRequestProto)(nil), "hadoop.hdfs.GetReplicaVisibleLengthRequestProto")
-	proto.RegisterType((*GetReplicaVisibleLengthResponseProto)(nil), "hadoop.hdfs.GetReplicaVisibleLengthResponseProto")
-	proto.RegisterType((*RefreshNamenodesRequestProto)(nil), "hadoop.hdfs.RefreshNamenodesRequestProto")
-	proto.RegisterType((*RefreshNamenodesResponseProto)(nil), "hadoop.hdfs.RefreshNamenodesResponseProto")
-	proto.RegisterType((*DeleteBlockPoolRequestProto)(nil), "hadoop.hdfs.DeleteBlockPoolRequestProto")
-	proto.RegisterType((*DeleteBlockPoolResponseProto)(nil), "hadoop.hdfs.DeleteBlockPoolResponseProto")
-	proto.RegisterType((*GetBlockLocalPathInfoRequestProto)(nil), "hadoop.hdfs.GetBlockLocalPathInfoRequestProto")
-	proto.RegisterType((*GetBlockLocalPathInfoResponseProto)(nil), "hadoop.hdfs.GetBlockLocalPathInfoResponseProto")
-	proto.RegisterType((*ShutdownDatanodeRequestProto)(nil), "hadoop.hdfs.ShutdownDatanodeRequestProto")
-	proto.RegisterType((*ShutdownDatanodeResponseProto)(nil), "hadoop.hdfs.ShutdownDatanodeResponseProto")
-	proto.RegisterType((*EvictWritersRequestProto)(nil), "hadoop.hdfs.EvictWritersRequestProto")
-	proto.RegisterType((*EvictWritersResponseProto)(nil), "hadoop.hdfs.EvictWritersResponseProto")
-	proto.RegisterType((*GetDatanodeInfoRequestProto)(nil), "hadoop.hdfs.GetDatanodeInfoRequestProto")
-	proto.RegisterType((*GetDatanodeInfoResponseProto)(nil), "hadoop.hdfs.GetDatanodeInfoResponseProto")
-	proto.RegisterType((*TriggerBlockReportRequestProto)(nil), "hadoop.hdfs.TriggerBlockReportRequestProto")
-	proto.RegisterType((*TriggerBlockReportResponseProto)(nil), "hadoop.hdfs.TriggerBlockReportResponseProto")
-	proto.RegisterType((*GetBalancerBandwidthRequestProto)(nil), "hadoop.hdfs.GetBalancerBandwidthRequestProto")
-	proto.RegisterType((*GetBalancerBandwidthResponseProto)(nil), "hadoop.hdfs.GetBalancerBandwidthResponseProto")
-}
-
-func init() { proto.RegisterFile("ClientDatanodeProtocol.proto", fileDescriptor6) }
-
 var fileDescriptor6 = []byte{
 	// 804 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x56, 0x4b, 0x6f, 0xdb, 0x46,
